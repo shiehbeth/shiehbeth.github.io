@@ -7,31 +7,61 @@
         <div class="grid-container">
             <div class="nav-bar">
                 <div>
-                    <h1>Beth Shieh</h1>
+                    <h1 class="name-logo">Beth Shieh</h1>
                 </div>
                 <div class="nav-options">
-                    <div>
-                        <h2>home</h2>
+                    <div class="nav-item nav-item-selected">
+                        <a href="https://shiehbeth.github.io/"><h2>home</h2></a>
                     </div>
-                    <div>
-                        <h2>projects</h2>
+                    <div class="nav-item">
+                        <a href="https://shiehbeth.github.io/projects"><h2>projects</h2></a>
                     </div>
-                    <div>
-                        <h2>contact</h2>
+                    <div class="nav-item">
+                        <a href="https://shiehbeth.github.io/contact"><h2>contact</h2></a>
                     </div>
-                    <div>
-                        <h2>about</h2>
+                    <div class="nav-item">
+                        <a href="https://shiehbeth.github.io/more"><h2>more</h2></a>
                     </div>
                 </div>
             </div>
 
-            <div class="left-panel"></div>
-            <div class="center-panel">
-
+            <div class="left-panel">
+                <div>
+                    <img src="bio_photo.jpeg" id="bioPhoto">
+                </div>
+                <!-- https://stackoverflow.com/questions/11620698/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript -->
+                <button type="submit" onclick="window.open('beth_shieh_resume.docx')">Download Resume</button>
             </div>
-            <div class="right-panel"></div>
-            <div class="footer"></div>
+            <div class="center-panel">
+                <div class="center-content">
+                    <h1 class="large-text">
+                        Beth Shieh
+                    </h1>
+                    <h1 class="medium-text">about me</h1>
+                    <p class="center-text">
+                        Hello! I am a Master’s student in Computer Science at Northeastern University with a passion for using technology to solve real world problems. Before transitioning into software engineering, I was a pediatric physical therapist, where I worked closely with multidisciplinary teams to deliver patient-centered care. My background has equipped me with strong problem-solving skills and a unique perspective on how technology can be leveraged to improve lives.
+                    </p>
+                    <h1 class="medium-text">experience</h1>
+                    <ul>
+                        <li class="resume-item">Teaching Assistant | Northeastern University</li>
+                        <li class="resume-subitem">Graduate assistant teaching for CS5001 Intensive Foundations in Computer Science</li>
+                        <li class="resume-item">Peer Mentor | Northeastern University</li>
+                        <li class="resume-subitem">Peer mentoring for new Master's level students entering tech related fields</li>
+                        <li class="resume-item">CoFounder | Decode LeetCode @ Northeastern University</li>
+                        <li class="resume-subitem">Democratizing the understanding of computer science principles in LeetCode for non-traditional CS students</li>
+                        <li class="resume-item">Pediatric Physical Therapist | Rehab Without Walls</li>
+                        <li class="resume-subitem">Providing patient-centered and collaborative care for children with neuro-developmental disabilities</li>
+                        <li class="resume-item">Acute Care Physical Therapist | University of Washington</li>
+                        <li class="resume-subitem">Treating acute care patients using physical therapy to improve post-surgical outcomes</li>
+                    </ul>
+                    <h1 class="medium-text">education</h1>
+                    <ul>
+                        <li class="resume-item">Master of Science in Computer Science, Northeastern University (2024 - 2026)</li>
+                        <li class="resume-item">Doctor of Physical Therapy, Northwestern University (2018 - 2021)</li>
+                        <li class="resume-item">Bachelor of Arts in Biology, Northwestern University (2014 - 2018)</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
     </body>
 </html>

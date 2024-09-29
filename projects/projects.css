@@ -46,8 +46,14 @@ a:link {
     background-color: transparent;
     text-decoration: none;
   }
-
-.grid-container {
+.project-columns{
+    background-color: DEDBE6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .grid-container {
     background-color: DEDBE6;
     display: grid;
     grid-template-areas:
@@ -57,7 +63,7 @@ a:link {
         "left-panel center-panel center-panel center-panel center-panel right-panel"
         "left-panel center-panel center-panel center-panel center-panel right-panel"
     ;
-}
+} */
 
 .nav-bar {
     height: 50px;
@@ -89,24 +95,34 @@ a:link {
 }
 
 /* https://stackoverflow.com/questions/13337646/scroll-inside-of-a-fixed-sidebar */
-.left-panel {
-    grid-area: left-panel;
+.left-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: sticky;
     top: 50px;
     height: calc(100vh - 50px);
+    width: 300px;
 }
-.center-panel {
+.center-div {
+    background-color: DEDBE6;
     display: flex;
-    grid-area: center-panel;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: 50px;
     height: calc(100vh - 50px);
-    overflow-y: auto;
-    padding: 20px;
+    width: 300px;
+}
+.right-div {
+    background-color: DEDBE6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    height: calc(100vh - 50px);
+    width: 300px;
 }
 
 .center-content {
@@ -145,14 +161,14 @@ a:link {
     font-family: monospace;
 }
 .resume-subitem{
-    padding-left: 50px;
+    padding: 5px;
     font-size: medium;
     color: #7b7775;
     font-family: monospace;
     list-style-type: none;
     margin-bottom: 10px;
 }
-#bioPhoto {
-    width: 250px;
-    margin: 50px;
+.project-photo{
+    width: 300px;
+    margin: 0px;
 }
