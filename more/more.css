@@ -45,18 +45,6 @@ h2:hover{
 a:link {
     background-color: transparent;
     text-decoration: none;
-  }
-
-.grid-container {
-    background-color: DEDBE6;
-    display: grid;
-    grid-template-areas:
-        "nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar"
-        "left-panel center-panel center-panel center-panel center-panel right-panel"
-        "left-panel center-panel center-panel center-panel center-panel right-panel"
-        "left-panel center-panel center-panel center-panel center-panel right-panel"
-        "left-panel center-panel center-panel center-panel center-panel right-panel"
-    ;
 }
 
 .nav-bar {
@@ -88,32 +76,27 @@ a:link {
     text-decoration: underline;
 }
 
-/* https://stackoverflow.com/questions/13337646/scroll-inside-of-a-fixed-sidebar */
-.left-panel {
-    grid-area: left-panel;
+.center-div {
+    background-color: DEDBE6;
+    top: 40px;
+    /* height: calc(100vh - 50px); */
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 50px;
-    height: calc(100vh - 50px);
-}
-.center-panel {
-    display: flex;
-    grid-area: center-panel;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-    padding: 20px;
-    margin-top: 0px;
-    padding-top: 50px;
 }
 
 .center-content {
-    margin-top: 500px;
+    margin-top: 50px;
     margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hobby-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
 }
 
 .nav-options{
@@ -122,18 +105,19 @@ a:link {
     flex-direction: row;
 }
 .center-text{
-    padding: 20px;
     font-family: monospace;
     font-size: large;
     color: #7b7775;
+    padding-left: 30px;
     padding-top: 10px;
 }
+
 .large-text{
     padding: 20px;
     font-size: 60px;
 }
 .medium-text{
-    padding: 10px;
+    font-family: monospace;
     padding-left: 20px;
     font-size: 30px;
     color: #534f4d;
@@ -147,14 +131,22 @@ a:link {
     font-family: monospace;
 }
 .resume-subitem{
-    padding-left: 50px;
+    padding: 5px;
     font-size: medium;
     color: #7b7775;
     font-family: monospace;
     list-style-type: none;
     margin-bottom: 10px;
 }
-#bioPhoto {
+
+.hobby-image{
     width: 250px;
+    padding: 10px;
+}
+
+#surprise{
+    background-color: #7b7775;
+    width: 1.5px;
+    height: 1.5px;
     margin: 50px;
 }
