@@ -158,3 +158,20 @@ a:link {
     width: 250px;
     margin: 50px;
 }
+
+@media(max-width: 400px) {
+
+    h2{
+        font-size:large;
+    }
+    .center-text{
+        font-size: larger;
+    }
+    .resume-item{
+        font-size:larger;
+    }
+    .resume-item{
+        font-size: large;
+    }
+
+}

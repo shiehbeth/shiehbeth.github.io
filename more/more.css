@@ -80,16 +80,19 @@ a:link {
     background-color: DEDBE6;
     top: 40px;
     /* height: calc(100vh - 50px); */
+    height: 100%;
     display: flex;
     justify-content: center;
 }
 
 .center-content {
+    background-color: DEDBE6;
     margin-top: 50px;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* height: calc(100vh - 50px); */
 }
 
 .hobby-row{
@@ -140,7 +143,7 @@ a:link {
 }
 
 .hobby-image{
-    width: 250px;
+    width: 200px;
     padding: 10px;
 }
 
@@ -149,4 +152,21 @@ a:link {
     width: 1.5px;
     height: 1.5px;
     margin: 50px;
+}
+
+@media(max-width: 400px) {
+
+    h2{
+        font-size:large;
+    }
+    .center-text{
+        font-size: larger;
+    }
+    .resume-item{
+        font-size:larger;
+    }
+    .resume-item{
+        font-size: large;
+    }
+
 }

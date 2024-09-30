@@ -140,3 +140,20 @@ a:link {
 .icon {
     width: 100px;
 }
+
+@media(max-width: 400px) {
+
+    h2{
+        font-size:large;
+    }
+    .center-text{
+        font-size: larger;
+    }
+    .resume-item{
+        font-size:larger;
+    }
+    .resume-item{
+        font-size: large;
+    }
+
+}
