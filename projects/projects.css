@@ -2,12 +2,13 @@ body{
     padding: 0px;
     margin: 0px;
     padding-top: 50px;
+    overflow-y: auto;
 }
 h1 {
-    color: 231D1A;
+    color: #231D1A;
     font-size: 20px;
     font-family: monospace;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-size: 20px;
     margin: 0px;
     padding: 30px;
@@ -15,7 +16,7 @@ h1 {
 }
 
 h2 {
-    color: 6c5951;
+    color: #6c5951;
     font-family: monospace;
     font-size: 16px;
     margin-left: 50px;
@@ -28,9 +29,9 @@ ul {
 button{
     font-family: monospace;
     font-size: 15px;
-    background-color: e2dedc;
-    color: 6c5951;
-    border: 1px 988b85;
+    background-color: #e2dedc;
+    color: #6c5951;
+    border: 1px #988b85;
     padding: 10px;
     border-radius: 5px;
     margin: 30px;
@@ -38,7 +39,7 @@ button{
 }
 
 h2:hover{
-    color: 201b18;
+    color: #201b18;
     /* text-decoration: underline; */
     transition: 0.5s ease-in-out;
 }
@@ -47,7 +48,7 @@ a:link {
     text-decoration: none;
   }
 .project-columns{
-    background-color: DEDBE6;
+    background-color: #DEDBE6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +66,7 @@ a:link {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: DEDBE6;
+    background-color: #DEDBE6;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .name-logo {
@@ -83,6 +84,15 @@ a:link {
     text-decoration: underline;
 }
 
+#toggle-menu {
+    display: none;
+}
+.burger{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 /* https://stackoverflow.com/questions/13337646/scroll-inside-of-a-fixed-sidebar */
 .top-div {
     display: flex;
@@ -94,7 +104,7 @@ a:link {
     width: 300px;
 }
 .center-div {
-    background-color: DEDBE6;
+    background-color: #DEDBE6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,7 +114,7 @@ a:link {
     width: 300px;
 }
 .bottom-div {
-    background-color: DEDBE6;
+    background-color: #DEDBE6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,7 +155,7 @@ a:link {
 .resume-item{
     padding: 10px;
     padding-left: 20px;
-    font-size: large;
+    font-size: x-large;
     color: #534f4d;
     font-family: monospace;
 }
@@ -162,19 +172,52 @@ a:link {
     margin: 0px;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 800px) {
+
+    .center-content {
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
 
     h2{
-        font-size:large;
-    }
-    .center-text{
-        font-size: larger;
-    }
-    .resume-item{
-        font-size:larger;
-    }
-    .resume-item{
-        font-size: large;
+        font-size:x-large;
     }
 
+    .name-logo {
+        padding: 20px;
+        font-size: large;
+    }
+    .center-text{
+        font-size: x-large;
+    }
+    .resume-item{
+        font-size: x-large;
+    }
+    .resume-subitem{
+        font-size: large;
+    }
+    /* https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o */
+    .burger {
+        display: block;
+    }
+    .nav-options{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #ccc9d6;
+    }
+
+    #toggle-menu:checked + .burger + .nav-options {
+        display: flex;
+    }
+
+    .nav-item {
+        padding: 0px;
+        text-align: center;
+        border: 1px solid #6c5951;
+
+    }
 }
