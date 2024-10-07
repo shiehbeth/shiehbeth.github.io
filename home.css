@@ -170,7 +170,7 @@ a:link {
     margin: 50px;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 1000px) {
     .grid-container {
         grid-template-areas:
             "nav-bar"
